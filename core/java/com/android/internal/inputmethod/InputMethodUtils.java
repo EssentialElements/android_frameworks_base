@@ -1246,8 +1246,9 @@ public class InputMethodUtils {
         }
 
         public boolean isShowImeWithHardKeyboardEnabled() {
-                return Settings.Secure.getIntForUser(mResolver,
-                        Settings.Secure.SHOW_IME_WITH_HARD_KEYBOARD, 0, mCurrentUserId) == 1;
+                //return Settings.Secure.getIntForUser(mResolver,
+                //        Settings.Secure.SHOW_IME_WITH_HARD_KEYBOARD, 0, mCurrentUserId) == 1;
+                return true;
         }
 
         public void setShowImeWithHardKeyboard(boolean show) {
