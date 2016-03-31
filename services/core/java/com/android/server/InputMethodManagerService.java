@@ -411,7 +411,7 @@ public class InputMethodManagerService extends IInputMethodManager.Stub
     private InputMethodInfo[] mIms;
     private int[] mSubtypeIds;
     private Locale mLastSystemLocale;
-    private boolean mShowImeWithHardKeyboard;
+    private boolean mShowImeWithHardKeyboard = true;
     private final MyPackageMonitor mMyPackageMonitor = new MyPackageMonitor();
     private final IPackageManager mIPackageManager;
 
@@ -1777,7 +1777,7 @@ public class InputMethodManagerService extends IInputMethodManager.Stub
     }
 
     public void updateKeyboardFromSettingsLocked() {
-        mShowImeWithHardKeyboard = mSettings.isShowImeWithHardKeyboardEnabled();
+        mShowImeWithHardKeyboard = true;
         if (mSwitchingDialog != null
                 && mSwitchingDialogTitleView != null
                 && mSwitchingDialog.isShowing()) {
