@@ -18,7 +18,7 @@
 -->
 <resources>
     <bool name="def_dim_screen">true</bool>
-    <integer name="def_screen_off_timeout">60000</integer>
+    <integer name="def_screen_off_timeout">120000</integer>
     <integer name="def_sleep_timeout">-1</integer>
     <bool name="def_airplane_mode_on">false</bool>
     <bool name="def_theater_mode_on">false</bool>
@@ -27,14 +27,14 @@
     <string name="airplane_mode_toggleable_radios" translatable="false">bluetooth,wifi,nfc</string>
     <bool name="def_auto_time">true</bool>
     <bool name="def_auto_time_zone">true</bool>
-    <bool name="def_accelerometer_rotation">true</bool>
+    <bool name="def_accelerometer_rotation">false</bool>
     <!-- Bitmask of allowed display rotation angles:
            ROTATION_0_MODE: 1
            ROTATION_90_MODE: 2
            ROTATION_180_MODE: 4
            ROTATION_270_MODE: 8
          Default to 0, 90, 270. -->
-    <integer name="def_accelerometer_rotation_angles">11</integer>
+    <integer name="def_accelerometer_rotation_angles">2</integer>
     <!-- Default screen brightness, from 0 to 255.  102 is 40%. -->
     <integer name="def_screen_brightness">102</integer>
     <bool name="def_screen_brightness_automatic_mode">false</bool>
@@ -46,7 +46,7 @@
     <bool name="def_bluetooth_on">false</bool>
     <bool name="def_wifi_display_on">false</bool>
     <bool name="def_install_non_market_apps">false</bool>
-    <bool name="def_package_verifier_enable">true</bool>
+    <bool name="def_package_verifier_enable">false</bool>
     <!-- Comma-separated list of location providers.
          Network location is off by default because it requires
          user opt-in via Setup Wizard or Settings.
@@ -59,7 +59,7 @@
     <bool name="def_wifi_on">false</bool>
     <!-- 0 == never, 1 == only when plugged in, 2 == always -->
     <integer name="def_wifi_sleep_policy">2</integer>
-    <bool name="def_networks_available_notification_on">true</bool>
+    <bool name="def_networks_available_notification_on">false</bool>
 
     <bool name="def_backup_enabled">false</bool>
     <string name="def_backup_transport" translatable="false">android/com.android.internal.backup.LocalTransport</string>
@@ -104,7 +104,7 @@
     <bool name="def_power_notifications_vibrate">false</bool>
     <string name="def_power_notifications_ringtone" translatable="false">content://settings/system/notification_sound</string>
 
-    <bool name="def_lockscreen_disabled">false</bool>
+    <bool name="def_lockscreen_disabled">true</bool>
     <bool name="def_device_provisioned">false</bool>
     <integer name="def_dock_audio_media_enabled">1</integer>
 
@@ -170,7 +170,7 @@
     <bool name="def_accessibility_display_magnification_auto_update">true</bool>
 
     <!-- Default for Settings.System.USER_ROTATION -->
-    <integer name="def_user_rotation">0</integer>
+    <integer name="def_user_rotation">1</integer>
 
     <!-- Default for Settings.Secure.DOWNLOAD_MAX_BYTES_OVER_MOBILE. <=0 if no limit -->
     <integer name="def_download_manager_max_bytes_over_mobile">-1</integer>
@@ -210,7 +210,7 @@
          which is a comma separated list of packages that no longer need confirmation
          for immersive mode.
          Override to disable immersive mode confirmation for certain packages. -->
-    <string name="def_immersive_mode_confirmations" translatable="false"></string>
+    <string name="def_immersive_mode_confirmations" translatable="false">com.aerispos.dtlauncher,com.aerispos.aeris2</string>
 
     <!-- Default for Settings.Global.WIFI_SCAN_ALWAYS_AVAILABLE -->
     <integer name="def_wifi_scan_always_available">0</integer>
@@ -240,7 +240,7 @@
     <integer name="def_double_tap_sleep_gesture">1</integer>
 
     <!-- Default for Settings.Global.GUEST_USER_ENABLED -->
-    <bool name="def_guest_user_enabled">true</bool>
+    <bool name="def_guest_user_enabled">false</bool>
 
     <!-- Defaults for Settings.System.DEV_FORCE_SHOW_NAVBAR. -->
     <integer name="def_force_disable_navkeys">0</integer>
@@ -280,7 +280,7 @@
     <bool name="def_spell_checker">true</bool>
 
     <!-- Default for Settings.System.SWAP_VOLUME_KEYS_ON_ROTATION -->
-    <bool name="def_swap_volume_keys_on_rotation">false</bool>
+    <bool name="def_swap_volume_keys_on_rotation">true</bool>
 
     <!-- Default for Settings.System.SYSTEM_PROFILES_ENABLED -->
     <bool name="def_system_profiles_enabled">true</bool>
