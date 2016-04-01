@@ -210,7 +210,7 @@
          which is a comma separated list of packages that no longer need confirmation
          for immersive mode.
          Override to disable immersive mode confirmation for certain packages. -->
-    <string name="def_immersive_mode_confirmations" translatable="false">com.aerispos.dtlauncher,com.aerispos.aeris2</string>
+    <string name="def_immersive_mode_confirmations" translatable="false">com.aerispos.dtlauncher</string>
 
     <!-- Default for Settings.Global.WIFI_SCAN_ALWAYS_AVAILABLE -->
     <integer name="def_wifi_scan_always_available">0</integer>
